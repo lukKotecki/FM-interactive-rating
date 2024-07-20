@@ -5,10 +5,11 @@
 }
 
 body {
-  background-color: white;
+  color: hsl(217, 12%, 63%);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: hsl(216, 12%, 8%);
   min-height: 100vh;
 }
 
@@ -17,8 +18,50 @@ body {
 }
 
 .wrapper {
-  padding: 5%;
-  background-color: lightblue;
+  padding: 8%;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 1em;
+}
+
+img {
+  margin: 0.3em 0;
+  padding: 1em;
+  background-color: hsl(215, 12%, 20%);
+  border-radius: 50%;
+}
+
+h1 {
+  color: white;
+  margin: 0.3em 0;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-label {
+  background-color: hsl(215, 12%, 20%);
+  color: white;
+  height: 3em;
+  width: 3em;
+  justify-content: center;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#submit {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  padding: 1em;
+  margin-top: 1em;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
 }
 
 .modal {

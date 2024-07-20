@@ -3,27 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./src/index.css">
-  <title>Frontend Mentor | Interactive rating component</title>
- 
+  <title>Frontend Mentor | Interactive rating component</title> 
 </head>
 <body>
-
   <div class="container">
     <div class="wrapper">
-
       <form>
-
-        How did we do?
+        <img src="./images/icon-star.svg">
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+        <div class="radio-group">
+          <input class="radio-input" type="radio" name="rating" id="rating-1" value="1">
+          <label class="radio-label" for="rating-1">1</label>
+          <input class="radio-input" type="radio" name="rating" id="rating-2" value="2">
+          <label class="radio-label" for="rating-1">2</label>
+          <input class="radio-input" type="radio" name="rating" id="rating-3" value="1">
+          <label class="radio-label" for="rating-3">3</label>
+          <input class="radio-input" type="radio" name="rating" id="rating-4" value="1">
+          <label class="radio-label" for="rating-4">4</label>
+          <input class="radio-input" type="radio" name="rating" id="rating-5" value="1">
+          <label class="radio-label" for="rating-5">5</label>
+        </div>
+          
         
-        Please let us know how we did with your support request. All feedback is appreciated 
-        to help us improve our offering!
-
-        1 2 3 4 5
-        
-        <button>Submit</button>
+        <button id="submit">Submit</button>
       </form>
       
       <div class="modal">
