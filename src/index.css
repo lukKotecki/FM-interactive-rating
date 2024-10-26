@@ -11,6 +11,7 @@ body {
   align-items: center;
   background-color: hsl(216, 12%, 8%);
   min-height: 100vh;
+  font-family: Overpass, sans-serif;
 }
 
 .container {
@@ -38,6 +39,7 @@ h1 {
 .radio-group {
   display: flex;
   justify-content: space-between;
+  margin-top: 1em;
 }
 
 .radio-input {
@@ -54,6 +56,7 @@ h1 {
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .radio-label:hover {
@@ -64,11 +67,20 @@ h1 {
   display: inline-block;
   width: 100%;
   border: none;
-  padding: 1em;
-  margin-top: 1em;
+  padding: 0.9em;
+  margin-top: 1.5em;
   background-color: hsl(25, 97%, 53%);
   color: hsl(216, 12%, 8%);
   cursor: pointer;
+  border-radius: 1.5em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: white;
 }
 
 .modal {
