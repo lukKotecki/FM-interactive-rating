@@ -7,12 +7,23 @@ console.log(radioInput);
     e.preventDefault();
     console.log("submit button clicked");
 });
-// radioInput.forEach(radio => {
+const elements = Array.from(document.getElementsByClassName("radio-input"));
+elements.forEach((el) => {
+    el.addEventListener("click", function (e) {
+        let num = e.target.value;
+        console.log(num);
+    });
+});
+// radioInput.forEach(radio=> {
 //   radio.addEventListener("click", function(e) {
 //     console.log(e.target.value)
 //   })
 // })
-radioInput[0].addEventListener("click", function (e) {
-    console.log(e.target);
-});
+let chosenRating = 0;
+// radioInput[0].addEventListener("click", function(e) {
+//     const element = e.currentTarget as HTMLInputElement;
+//     console.log(chosenRating);    
+//     chosenRating = Number(element.value);
+//     console.log(chosenRating);    
+// })
 //# sourceMappingURL=index.js.map
