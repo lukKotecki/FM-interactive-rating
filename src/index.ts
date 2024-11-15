@@ -1,6 +1,4 @@
 
-console.log('hel lo')
-
 let radioInput = document.getElementsByClassName('radio-input')
 
 
@@ -17,7 +15,7 @@ document.getElementById("submit")?.addEventListener("click", function(e) {
 const elements: Element[] = Array.from(document.getElementsByClassName("radio-input"));
 elements.forEach((el: Element) => {
     el.addEventListener("click", function(e) {
-      let num = e.target;
+      let num = (e.target as HTMLTextAreaElement).value;
         console.log(num)
   })
 })
