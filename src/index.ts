@@ -17,7 +17,7 @@ document.getElementById("submit")?.addEventListener("click", function(e) {
 const elements: Element[] = Array.from(document.getElementsByClassName("radio-input"));
 elements.forEach((el: Element) => {
     el.addEventListener("click", function(e) {
-      let num = e.target.value;
+      let num = e.target;
         console.log(num)
   })
 })

@@ -10,7 +10,7 @@ console.log(radioInput);
 const elements = Array.from(document.getElementsByClassName("radio-input"));
 elements.forEach((el) => {
     el.addEventListener("click", function (e) {
-        let num = e.target.value;
+        let num = e.target;
         console.log(num);
     });
 });
