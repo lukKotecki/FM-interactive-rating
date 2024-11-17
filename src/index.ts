@@ -1,8 +1,8 @@
 
-let radioInput = document.getElementsByClassName('radio-input')
+let radioInputs = document.getElementsByClassName('radio-input')
+let num:number = 0;
 
-
-console.log(radioInput)
+console.log(radioInputs)
 
 
 document.getElementById("submit")?.addEventListener("click", function(e) {
@@ -11,32 +11,19 @@ document.getElementById("submit")?.addEventListener("click", function(e) {
 })
 
 
-
 const elements: Element[] = Array.from(document.getElementsByClassName("radio-input"));
 elements.forEach((el: Element) => {
     el.addEventListener("click", function(e) {
+      removeSelected();
       let num = (e.target as HTMLTextAreaElement).value;
-        console.log(num)
+      console.log(num);
+      (e.target as HTMLTextAreaElement).classList.add("selected");
   })
 })
 
-// radioInput.forEach(radio=> {
-//   radio.addEventListener("click", function(e) {
-//     console.log(e.target.value)
-//   })
-// })
 
-let chosenRating:Number = 0;
-
-
-
-// radioInput[0].addEventListener("click", function(e) {
-//     const element = e.currentTarget as HTMLInputElement;
-//     console.log(chosenRating);    
-//     chosenRating = Number(element.value);
-//     console.log(chosenRating);    
-// })
-
-
-
-
+function removeSelected() {
+  elements.forEach((el) => {
+       el.classList.remove("selected");
+     });
+     }
