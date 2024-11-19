@@ -21,7 +21,6 @@ elements.forEach((el: Element) => {
   })
 })
 
-
 function removeSelected() {
   elements.forEach((el) => {
        el.classList.remove("selected");
