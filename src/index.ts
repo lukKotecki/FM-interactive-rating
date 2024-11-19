@@ -4,7 +4,6 @@ let num:number = 0;
 
 console.log(radioInputs)
 
-
 document.getElementById("submit")?.addEventListener("click", function(e) {
     e.preventDefault()
   console.log("submit button clicked")
