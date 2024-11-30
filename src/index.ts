@@ -1,7 +1,6 @@
 
 let radioInputs = document.getElementsByClassName('radio-input')
 let num:number = 0;
-
 console.log(radioInputs)
 
 document.getElementById("submit")?.addEventListener("click", function(e) {
